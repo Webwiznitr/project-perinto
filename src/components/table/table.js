@@ -28,20 +28,31 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(Category, Subscription, Type) {
-  return { Category, Subscription, Type };
+function createData(State, DistributorName, Address, Email, Telephone) {
+  return { State, DistributorName, Address, Email, Telephone };
 }
 
 const rows = [
-  createData("Member", "₹ 600", "Annually"),
-  createData("Student Member", "₹ 300", "Annually"),
-  createData("Life Member *below 60", "₹ 6000", "Lump Sum"),
-  createData("Life Member *60 or above", "₹ 3000", "Lump Sum"),
-  createData("Institutional Member", "₹ 6000", "Annually"),
-  createData("Corporate Member", "₹ 60000", "Annually"),
-  createData("Overseas Life Member", "USD 1000", "Lump Sum"),
-  createData("Overseas Annual Member", "USD 100", "Annually"),
-  createData("Overseas Institutional Member", "USD 1000", "Annually"),
+  createData("Orissa", 
+  "OM SAI MEDICAL AGENCIES", 
+  "PLOT NO: 139DEULA SAHITULASIPUR,CUTTACK,753008",
+  "omsai.agencies2009@gmail.com",
+  "9861090930"),
+  createData("Orissa", 
+  "CHANDUKA AGENCIES", 
+  "MANIK GHOSE BAZARTALA TELENGA BAZARPURIGHAT,CUTTACK,753009",
+  "rchanduka@gmail.com",
+  "06712308681"),
+  createData("Orissa", 
+  "ADELINE PHARMA PVT LTD APOLLO",
+  "ASHOK NAGARUNIT 2CAPITALBHUBANESWAR BHUBANESWAR 751009",
+  " ",
+  "0674-2951213"),
+  createData("Orissa", 
+  "BANSAL ENTERPRISERS",
+  "OPP:UNION BANKMARWARIPARAJHARSUGUDA.,JHARSUGUDA,768201", 
+  "mkbansal1999@gmail.com", 
+  "06645-271023"),
 ];
 
 export default function CustomizedTables() {
@@ -50,19 +61,23 @@ export default function CustomizedTables() {
       <Table aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Category</StyledTableCell>
-            <StyledTableCell align="right">Subscription</StyledTableCell>
-            <StyledTableCell align="right">Type</StyledTableCell>
+            <StyledTableCell>State</StyledTableCell>
+            <StyledTableCell align="center">DistributorName</StyledTableCell>
+            <StyledTableCell align="center">Address</StyledTableCell>
+            <StyledTableCell align="center">Email</StyledTableCell>
+            <StyledTableCell align="center">Telephone</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
-              <StyledTableCell>{row.Category}</StyledTableCell>
-              <StyledTableCell align="right">
-                {row.Subscription}
+              <StyledTableCell>{row.State}</StyledTableCell>
+              <StyledTableCell align="center">
+                {row.DistributorName}
               </StyledTableCell>
-              <StyledTableCell align="right">{row.Type}</StyledTableCell>
+              <StyledTableCell align="center">{row.Address}</StyledTableCell>
+              <StyledTableCell align="center">{row.Email}</StyledTableCell>
+              <StyledTableCell align="center">{row.Telephone}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

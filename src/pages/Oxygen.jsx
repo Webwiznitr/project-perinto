@@ -1,10 +1,9 @@
 import React from 'react';
-import Table from '../components/table/table';
+import Table from '../components/table/table_oxy';
 
 function Oxygen() {
     return (
         <div className="App">
-            <h1>Coming Soon</h1>
             <Table />
         </div>
     )
