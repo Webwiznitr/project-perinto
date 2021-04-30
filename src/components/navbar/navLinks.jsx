@@ -42,17 +42,20 @@ export function NavLinks(props) {
   return (
     <NavLinksContainer>
       <LinksWrapper>
-        <LinkItem>
-          <Link href="#">Oxygen</Link>
+      <LinkItem>
+          <Link href="/">Home</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Beds</Link>
+          <Link href="/oxygen">Oxygen</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Plasma Donor</Link>
+          <Link href="/beds">Beds</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="#">Medicine</Link>
+          <Link href="/plasma">Plasma Donor</Link>
+        </LinkItem>
+        <LinkItem>
+          <Link href="/medicine">Medicine</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

@@ -53,16 +53,16 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <LinksWrapper>
           <LinkItem>
-            <Link href="#">Oxygen</Link>
+            <Link href="/oxygen">Oxygen</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Beds</Link>
+            <Link href="/beds">Beds</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Plasma Donor</Link>
+            <Link href="/plasma">Plasma Donor</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="#">Medicine</Link>
+            <Link href="/medicine">Medicine</Link>
           </LinkItem>
           <Marginer />
           <Accessibility />
