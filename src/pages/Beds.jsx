@@ -1,5 +1,5 @@
 import React from 'react'
-import Table from '../components/table/table';
+import Table from '../components/table/table_bed';
 
 function Beds() {
     return (
